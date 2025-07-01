@@ -93,45 +93,67 @@ Ask Claude to use the quantum computation tools:
 3. Copy your API token
 4. Keep it secure - never commit to version control
 
-## Usage Examples 📝
 
-### Basic Quantum Computation
+## 🛠 Available Tools
 
-```python
-# Through Claude or MCP client
-await call_tool("quantum_compute", {
-    "query": "Create a Bell state with two qubits",
-    "openai_key": "your-openai-key",
-    "ibm_token": "your-ibm-token",
-    "shots": 1024
-})
+The `quantum-mcp-server` exposes a set of powerful tools for quantum computation via the MCP (Multi-Modal Control Protocol) interface. These tools support natural language input, automatic circuit generation, and backend selection using Qiskit, IBM Quantum, and OpenAI.
+
+---
+
+### 🔹 `quantum_compute`
+
+**Description:**  
+Executes a quantum computation described in natural language.
+
+**Input Schema:**
+```json
+{
+  "query": "Create a Bell state using 2 qubits",
+  "shots": 1024
+}
 ```
 
-### Natural Language Queries
+**Features:**
+- Parses natural language to identify quantum operations
+- Supports Bell states, QFT, Grover's algorithm, teleportation, VQE, QAOA, and more
+- Automatically selects between IBM Quantum hardware and local simulator
+- Returns measurement results, circuit diagram, backend details, and analysis
 
-The server understands various natural language patterns:
+---
 
-- **"Create a Bell state"** → Generates entangled quantum state
-- **"Run Grover's algorithm on 3 qubits"** → Quantum search algorithm
-- **"Generate quantum random numbers"** → True quantum randomness
-- **"Apply quantum Fourier transform"** → QFT circuit
-- **"Demonstrate quantum teleportation"** → Quantum information transfer
+### 🔹 `list_quantum_backends`
 
-### List Available Backends
+**Description:**  
+Lists all available IBM Quantum backends (hardware + simulators).
 
-```python
-await call_tool("list_quantum_backends", {
-    "ibm_token": "your-ibm-token"
-})
+**Input Schema:**
+```json
+{}
 ```
 
-### Get Circuit Information
+**Features:**
+- Displays backend name, number of qubits, operational status, and type (simulator/real device)
+- Useful for backend selection and monitoring availability
 
-```python
-await call_tool("quantum_circuit_info", {
-    "operation": "bell_state"
-})
+---
+
+### 🔹 `quantum_circuit_info`
+
+**Description:**  
+Provides technical and educational information about supported quantum operations.
+
+**Input Schema:**
+```json
+{
+  "operation": "qft"
+}
 ```
+
+**Features:**
+- Explains concepts like Bell state, QFT, Grover, Teleportation, VQE, QAOA, etc.
+- Helpful for students, researchers, and developers working with quantum circuits
+
+---
 
 ## Example Output 📊
 

@@ -42,11 +42,6 @@ pip install -r requirements.txt
 python setup.py install
 ```
 
-### Alternative: Install from PyPI
-
-```bash
-pip install quantum-mcp-server
-```
 
 ## Quick Start 🚀
 

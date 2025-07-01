@@ -316,7 +316,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 ## Support 💬
 
 - 📧 Email: sakshiglaze@gmail.com
-- 💬 Discord: [Join our community](https://discord.gg/quantum-mcp)
+- 💬 Discord: [Join our community](https://discord.gg/UD4jyGHP)
 - 📖 Documentation: [Full Documentation](https://quantum-mcp-docs.example.com)
 
 ---

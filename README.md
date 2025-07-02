@@ -32,14 +32,11 @@ A powerful Model Context Protocol (MCP) server that enables natural language qua
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/quantum-mcp-server
-cd quantum-mcp-server
+git clone https://github.com/sakshiglaze/QuantumComputeMCPServer.git
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Or install using setup.py
-python setup.py install
 ```
 
 
@@ -48,7 +45,7 @@ python setup.py install
 ### 1. Start the MCP Server
 
 ```bash
-python quantum_mcp_server.py
+python server.py
 ```
 
 ### 2. Connect from Claude Desktop
@@ -260,8 +257,7 @@ The server includes comprehensive error handling:
 
 ```bash
 # Clone and setup development environment
-git clone https://github.com/your-org/quantum-mcp-server
-cd quantum-mcp-server
+git clone https://github.com/sakshiglaze/QuantumComputeMCPServer.git
 
 # Create virtual environment
 python -m venv venv

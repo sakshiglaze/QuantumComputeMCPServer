@@ -331,6 +331,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 - 📧 Email: sakshiglaze@gmail.com
 - 💬 Discord: [Join our community](https://discord.gg/UD4jyGHP)
 - 📖 Documentation: [Full Documentation](https://quantum-mcp-docs.example.com)
+- Medium: [Code Explaination](https://medium.com/@sakshiglaze/quantum-computing-meets-natural-language-building-an-mcp-server-for-quantum-circuits-e931ede21138)
 
 ---
 ## Disclaimer
